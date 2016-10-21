@@ -27,13 +27,5 @@ WORKDIR "/src"
 # Install dependencies
 RUN npm install --production
 
-# Env variables
-ENV PORTALEN_COLLECTOR_ADS_TAG portalen-collector-ads
-ENV PORTALEN_COLLECTOR_ADS_URL http://portalen.collector.ads.no
-ENV PORTALEN_COLLECTOR_ADS_HOST localhost
-ENV PORTALEN_COLLECTOR_ADS_PORT 8000
-ENV ADS_FEED_HOST_URL http://portalen.collector.ads.no
-ENV ADS_FEED_CHANNEL_ID ad
-
 # Startup
 CMD ["node", "service.js", "--seneca-log=type:act"]
