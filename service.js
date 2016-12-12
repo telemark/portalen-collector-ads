@@ -9,19 +9,21 @@ const pkg = require('./package.json')
 
 const options = {
   seneca: {
+    log: 'silent',
     tag: envs.PORTALEN_COLLECTOR_ADS_TAG || 'portalen-collector-ads-tag'
   },
   mesh: {
     auto: true,
     listen: [
-      {pin: 'cmd:collect-info, type:user', model: 'observe'}
+      {pin: 'cmd: collect-info, type: user', model: 'observe'}
     ]
   },
   ads: {
     type: 'ads',
     system: pkg.name,
     channelId: config.channelId,
-    feedHostUrl: config.feedHostUrl
+    feedHostUrl: config.feedHostUrl,
+    verbose: true
   },
   isolated: {
     host: envs.PORTALEN_COLLECTOR_ADS_HOST || 'localhost',
