@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/telemark/portalen-collector-ads.svg?branch=master)](https://travis-ci.org/telemark/portalen-collector-ads)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # portalen-collector-ads
 Collects ads for portalen
 
