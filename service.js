@@ -21,6 +21,7 @@ const options = {
   ads: {
     type: 'ads',
     system: pkg.name,
+    tag: config.adsServiceTag,
     channelId: config.channelId,
     feedHostUrl: config.feedHostUrl,
     verbose: true
