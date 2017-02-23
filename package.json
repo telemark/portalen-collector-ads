@@ -1,6 +1,6 @@
 {
   "name": "portalen-collector-ads",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "Collect news for portalen",
   "license": "MIT",
   "private": true,
